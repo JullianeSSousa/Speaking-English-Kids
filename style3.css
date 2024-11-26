@@ -1,0 +1,76 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(/assents/little-kid-playing.jpg); /*imagem como preenchimento de plano de fundo*/
+    background-repeat: no-repeat; 
+    background-size:cover; /*Escala a imagem o máximo possível*/
+    color: white;
+}
+
+.container{ /*estilo da div principal*/
+    display: grid; /*um contêiner de grade , qual o objetivo foi organizar os elementos em linhas e colunas*/ 
+    grid-template-columns: 250px 1fr; /*define o tamanho da coluna*/ 
+    gap: 2rem; /*espaçamento entre as colunas*/
+    padding: 2rem;
+
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column; /*posiciona os itens de cima para baixo,o flex-direction deve sempre estar com o dispaly flex*/
+    gap: 1rem;
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.35); /*para a transparencia funcionar a cor deve estar em rgb*/
+
+}
+
+.profile-photo{
+    width: 100%;
+    height: auto; /*evita que a foto fique desproporcional*/
+    border-radius: 50%;
+}
+
+ 
+.info{
+    display: flex; /*tansformando todos os seus filhos diretos em flex itens.*/
+    flex-direction: column;
+    gap: 0.5rem;
+}
+/*estilo da conteudo*/
+
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.post{
+    padding: 1rem;
+    border: 3px solid color(white);
+    border-radius: 15px;
+    border-style:hidden;
+    background-color: rgb(0 0 0 / 35%);
+}
+
+.botao_like{
+    display: flex;
+    flex-direction: column;
+    margin-left: 90%;
+    border: 5px;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 14px;
+    
+}
+
+.icon{
+    display: flex;
+    align-items:flex-start;
+    margin-left: 88%;
+    margin-top: 0%;
+    margin-bottom:3%;
+    width: 90px;
+
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container"> <!-- Div principal "div mãe", informações barra lateral-->
+
+        <div class="sidebar"> <!-- Div secundaria(filha), elemento lateral, funcionaria como um hearder?-->
+
+            <img src="/assents/avatar-01-01.png" alt="profile-photo" class="profile-photo">
+
+            <div class="info">
+                <!--<p><strong>Nome:</strong> Julliane Sousa</p>-->
+                <p><strong>Nivel:</strong> Iniciante</p> <!-- paragrafo com negrito, contendo informações-->
+               <!-- <p><strong>Localização:</strong> Paraíba - Brasil</p> -->
+                <button><a href="home.html">Inicio</a></button>
+            </div>
+        </div> <!-- aqui fecha a div sidebar-->
+
+        <!-- abaixo a abertura da div main-contente-->
+
+        <div class="main-content">
+            <!-- classe do conteudo principal, para não pegar o mesmo estilo da sidbar, ela deve estar fora da div do sidebar-->
+
+            <div class="post"> <!-- div filha da main-->
+                <h2>ESCUTA</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati minus autem temporibus
+                    vel. <br>Necessitatibus aliquid non ducimus in dolorem corporis, doloribus soluta corrupti itaque
+                    tempora tenetur,<br> error ab assumenda!</p>
+
+                    <a href="https://open.spotify.com/playlist/55q2FnoBckNw4Z6vz3ovTh?si=7e690c431db941a7"><img src="/assents/headphone_6978475.png" alt="icone" class="icon"></a>
+
+                    <!--<button class="botao_like"><a href="https://open.spotify.com/playlist/55q2FnoBckNw4Z6vz3ovTh?si=7e690c431db941a7" target="_blank" style="text-decoration: none;">OUVIR</a></button>  botões-->
+            </div> <!-- fechamento da div filha da main-->
+
+            <div class="post">
+                <h2>FALA</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati minus autem temporibus
+                    vel. <br>Necessitatibus aliquid non ducimus in dolorem corporis, doloribus soluta corrupti itaque
+                    tempora tenetur,<br> error ab assumenda!</p>
+                    <!-- subclasses, que deverão ficar separadas-->
+
+                    <img src="/assents/chat_1141082.png" alt="icone" class="icon">
+
+                <button class="botao_like"><a href="https://www.solinguainglesa.com.br/" target="_blank" style="text-decoration: none;">FALAR</a></button> <!-- botões-->
+            </div>
+
+            <div class="post">
+                <h2>PRATICA</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati minus autem temporibus
+                    vel. <br>Necessitatibus aliquid non ducimus in dolorem corporis, doloribus soluta corrupti itaque
+                    tempora tenetur,<br> error ab assumenda!</p>
+                <!-- para acrescentar o texto lorem ipsum, basta só digitar a palavra lorem-->
+
+
+                <button class="botao_like"><a href="https://pt.duolingo.com/" target="_blank" style="text-decoration: none;">PRATICAR</a></button> <!-- botões-->
+            </div>
+        </div> <!-- fechamento da  div  main-->
+
+    </div> <!-- fechamento da  div  container-->
+
+</body>
+
+</html>
